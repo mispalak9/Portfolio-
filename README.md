@@ -4,7 +4,7 @@ This is a personal portfolio website that showcases my projects, skills, and exp
 Technologies Used
 >> HTML
 >> JavaScript
->>> CSS
+>> CSS
 >> Other
 Project Link
 You can view the live version of my portfolio at >> https://palakfolio.netlify.app/.
