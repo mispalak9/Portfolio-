@@ -2,10 +2,10 @@
 This is a personal portfolio website that showcases my projects, skills, and experiences. The website is designed to provide an overview of my work and to serve as a platform for potential employers and collaborators to learn more about me.
 
 Technologies Used
->> HTML
->>> JavaScript
->>> CSS
->>> Other
+>> HTML.
+>>> JavaScript.
+>> CSS.
+>> Other.
 Project Link
 You can view the live version of my portfolio at >> https://palakfolio.netlify.app/.
 
