@@ -1,0 +1,35 @@
+body{
+    background-image:url("https://img.freepik.com/premium-photo/beautiful-environment-nature-illustration-anime-art-style-background-image_492154-1201.jpg?w=2000");
+    background-size:360px 600px;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+  }
+  .earth{
+    width:300px;
+    height:300px;
+    border-radius:100%;
+    background-image:url("https://i.postimg.cc/zGcm7Cbj/1.jpg");
+  background-size:740px ;
+  position:absolute ;
+  top:100px ;
+  box-shadow:inset 0px 0px 70px 10px black;
+  animation:mymove 15s infinite linear;
+  
+  }
+  
+  @keyframes mymove{
+    0%{background-position-x:0px;}
+    100%{background-position-x:740px;}
+  }
+  Button{
+      width:200px;
+      height:50px;
+      background-color: gray;
+      
+  }
+  a{
+      font-size:20px;
+      text-decoration:none;
+  }
+  

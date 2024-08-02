@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="sign-up-container">
+        <form method="POST" action="mailto: ">
+          <!--4th page after swap-->
+          <h1>Create Account✔️</h1>
+          <div class="social-links">
+            <div>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <span>Enter your information for registration</span>
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email">
+          <input type="phone number" placeholder="Phone Number">
+          <input type="password" placeholder="Password">
+          <input type="confirm password" placeholder="Confirm Password">
+          <button class="form_btn">Sign Up</button>
+        </form>
+      </div>
+      <!--sign in page-->
+      <div class="sign-in-container">
+        <form>
+          <h1>Sign In✔️</h1>
+          <div class="social-links">
+            <div>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <span>Use your existing account</span>
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <button class="form_btn">Sign In</button>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <!--left swap page-->
+        <div class="overlay-left">
+          <!--opposite side round img-->
+          <img src="img\2.jpeg" alt="Avatar" style="width:110px"> <!--round img 2nd page-->
+          <style>
+            img {
+              border-radius: 50%;
+              height: 150px;
+              border: 5px solid whitesmoke;
+              box-shadow: -5px -5px 10px crimson, 5px 5px 8px greenyellow;
+            }
+            </style>
+          <h1>Welcome Back😀</h1>
+          <p>To stay connected with us please login with your personal information.Thank you!👍</p>
+          <button id="signIn" class="overlay_btn">Sign In</button>
+        </div>
+
+        <!--right swap page-->
+        <div class="overlay-right">
+          <!--2nd page round img-->
+          <img src="img\me.jpeg" alt="Avatar" style="width:110px">
+          <style>
+            img {
+              border-radius: 50%;
+              height: 150px;
+            }
+            </style>
+          <h1>Hello👋.</h1>
+          <p>Fill your personal details and sign up your account.</p>
+          <button id="signUp" class="overlay_btn">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--js used-->
+  <script>
+    const signUpBtn = document.getElementById("signUp");
+const signInBtn = document.getElementById("signIn");
+const container = document.querySelector(".container");
+
+signUpBtn.addEventListener("click", () => {
+  container.classList.add("right-panel-active");
+});
+signInBtn.addEventListener("click", () => {
+  container.classList.remove("right-panel-active");
+});
+</script>
+
+
+
+</body>
+</html>

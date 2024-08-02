@@ -1,0 +1,665 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200;300;400;500;600;700,800,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tangerine', serif;
+  scroll-behavior: smooth;
+}
+p
+{
+  font-weight:600;
+  color: #212529;
+  font-family: "Raleway", sans-serif;
+}
+
+/*for HELLO MY NAME IS
+Palak Mishra
+And I'm a Web Designer.*/
+
+.banner
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .content
+{
+  text-align: center;
+}
+.banner .content h2
+{
+  font-size: 1em;
+  color: #fff;
+  background: #114c7dc0;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+.banner .content h3
+{
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px 2px #aaa;
+}
+.banner .content p
+{
+  font-size: 1em;
+  color: #fff;
+  background: #114c7dc0;
+  padding: 2px 10px;
+  border-radius: 4px;  
+}
+.btn
+{
+  font-size: 1em;
+  color: #fff;
+  background: #ffb727;  /*to change about me bg color*/
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 4px black;
+}
+.btn:hover
+{
+  letter-spacing: 6px;
+}
+
+/*for navigation bar*/
+header
+{
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  padding: 5px 10px;
+  z-index: 10000;
+  display: flex;
+  background-size: cover;
+  background-color: #114c7d;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;  
+}
+
+/*for logo (.)name*/
+header .logo
+{
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #aaa;
+  font-style: Fantasy;
+}
+header .logo span
+{
+  color: #ffb727;
+}
+
+/*for nevigation*/
+header .navigation
+{
+  position:relative;
+  display:flex;
+}
+header .navigation li
+{
+  list-style: none;
+  margin-left: 30px;
+}
+header .navigation li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-family: 300;
+  background: #ffb727;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header .navigation li a:hover
+{
+  transition: 1s;
+  background-color: darkcyan;
+}
+
+/* second page color*/
+
+section
+{
+  padding: 100px;
+  background-color: #023b6db5;
+}
+.row
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .col50
+{
+  position: relative;
+  width: 50%;
+}
+.titleText
+{
+  color: #111;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.titleText span
+{
+  color: #ffb727;   /*big letter color change*/
+  font-family: 700;
+  font-size: 1.5em;
+}
+
+/* for my photo*/
+.row .col50 .imgBx
+{
+  float: right;
+  width: 25%;
+  height: 41%;
+  padding: auto;
+  border: 5px solid rgba(0, 0, 0, 0.555);
+}
+
+.row .col50 .imgBx img
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  width:100%;
+  object-fit: cover;
+}
+
+.title
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*my skills*/
+.myskills .content
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #ffffff;  /*for myskill box color*/
+
+}
+.myskills .content .box
+{
+  width: 200px;
+  margin: 20px;
+  
+  display: inline-block;
+  text-align: center;
+  border-radius: 19%;
+  background: #d43076;
+  transition: all 0.5s ease-in-out;
+}
+
+.myskills .content .box:hover
+{
+  transform: translateY(10px);
+}
+
+.myskills .content .box .imgBx
+{
+  position: relative;
+  width: 140%;
+  height: 160px;
+ }
+
+.myskills .content .box .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height:90%;
+  object-fit: cover;
+}
+.myskills .content .box .text
+{
+  position: relative;
+  height: 43px;
+  overflow: hidden;
+}
+.myskills .content .box.box.active .text
+{
+   height: auto;
+}
+.myskills .content .box .text::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent,  rgba(0, 0, 0, 0));
+}
+.myskills .content .box.active .text::before
+{
+  display: none;
+}
+.myskills .content .box .text h3
+{
+  font-weight:600;
+  color: #212529;
+  font-family: "Raleway", sans-serif;
+}
+.myskills .content .box .text p
+{
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.myskills .content .box .text p3
+{
+  font-size: 1.2em;
+  color: black;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+}
+
+.myskills .content .box .more
+{
+  background: #ffb727;
+  display: inline-block;
+  padding: 8px 35px;
+  border-radius: 4px;
+  color: #fff;
+  transition: none;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.myskills .content .box .more:hover
+{
+  transform: translateY(-3px);
+  font-style: none;
+  color: wheat;
+  background-color: darkcyan;
+}
+
+.myskills .content .box.active .more
+{
+  font-style: none;
+}
+
+.myskills .content .box .more::before
+{
+  content: 'NEXT';
+}
+
+.myskills .content .box.active .more::before
+{
+  content: 'BACK';
+}
+
+/*certificates*/
+
+.certificate .content
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background-color: #ffffff22;
+}
+.certificate .content .box
+{
+  width: 200px;
+  margin: 15px;
+  transition: 0.5s;
+  display: inline-block;
+  text-align: center;
+  border-radius: 60%;
+  background: #d43076;
+  transition: all 0.3s ease-in-out;
+  
+}
+.certificate .content .box:hover
+{
+  transform: translateY(-5px);
+}
+.certificate .content .box .imgBx
+{
+  position: relative;
+  width: 120%;
+  height: 120px;
+}
+.certificate .content .box .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 120%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.certificate .content .box .text
+{
+  padding: 30px 0 20px;
+}
+.certificate .content .box .text h3
+{
+  color: #fff;
+  background: #023b6d;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+/*badge*/
+.mybadge .content
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background-color: #ffffff35;
+}
+.mybadge .content .box
+{
+  width: 110px;
+  margin: 20px;
+  transition: 0.5s;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5%;
+  background: #d43076;
+  transition: all 0.3s ease-in-out;
+}
+.mybadge .content .box:hover
+{
+  transform: translateY(-5px);
+}
+.mybadge .content .box .imgBx
+{
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.mybadge .content .box .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.mybadge .content .box .text
+{
+  padding: 15px 0 5px;
+}
+.mybadge .content .box .text h3
+{
+  font-weight: 600;
+  color: #fff;
+  background: #023b6d;
+  border-radius: 4px;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+}
+
+/*my projects*/
+.myprojects .content
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #ffffff3b; /*for myskill box color*/
+}
+.myprojects  .content .box
+{
+  width: 180px;
+  margin: 30px;
+  transition: 0.5s;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.myprojects .content .box:hover
+{
+  transform: translateY(10px);
+}
+.myprojects .content .box .imgBx
+{
+  position: relative;
+  width: 140%;
+  height: 160px;
+ }
+.myprojects .content .box .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height:90%;
+  object-fit: cover;
+}
+
+
+.myprojects .content .box .more
+{
+  background: #ffb727;
+  display: inline-block;
+  padding: 8px 35px;
+  border-radius: 4px;
+  color: #fff;
+  transition: none;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.myprojects .content .box .more:hover
+{
+  transform: translateY(-3px);
+  font-style: none;
+  color: wheat;
+  background-color: darkcyan;
+}
+.myprojects .content .box.active .more
+{
+  font-style: none;
+}
+.myprojects .content .box .more::before
+{
+  content: 'Click on Image';
+  text-shadow: 2px 2px 4px black;
+}
+
+/*contact*/
+.contact
+{
+  background-color: grey;
+  background-size: cover;
+}
+.contactForm
+{
+  padding: 75px 50px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 50px;
+}
+.contactForm h3
+{
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: initial-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.container
+{
+  max-width: 1200px;
+  margin: auto;
+}
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul
+{
+  list-style: none;
+}
+.footer
+{
+  background-color: black;
+}
+.footer-col
+{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4
+{
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ff0157;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+  margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s;
+}
+.footer-col ul li a:hover
+{
+  color: #ff0157;
+  transform: translateX(5px);
+}
+
+.footer-col .social-links img
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-col .social-links img:hover
+{
+  transform: translateY(-3px);
+}
+
+.CopyrightText
+{
+  padding: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 1);
+  text-align: center;
+  background: mintcream;
+}
+.CopyrightText p
+{
+  color: #333;
+}
+.CopyrightText a
+{
+  color: #ff0157;
+  font-weight: 500;
+  text-decoration: none;
+}
+

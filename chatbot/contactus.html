@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  resize: none;
+}
+
+body{
+  background:url(https://img2.goodfon.com/wallpaper/nbig/1/55/robot-belyy-shlem-belyy-fon.jpg);
+}
+
+.contact-us{
+  width: 250px;
+  background: url(https://e0.pxfuel.com/wallpapers/47/219/desktop-wallpaper-dbrand-robot-skin-mobile-skin-robot-robot-pattern-thumbnail.jpg);
+  padding: 50px;
+  margin: 30px auto;
+  border-radius: 30px;
+  position: relative;
+}
+
+.title h1{
+  color: white;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+
+.form,
+.form-items{
+  width: 100%;
+}
+
+.form-items .input{
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: #ebeef1;
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.form-items .input.message{
+  height: 125px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+}
+
+.btn{
+  background: #3e2093;
+  text-align: center;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn .fas{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.form-items{
+  position: relative;
+}
+
+.form-items .fas{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #9a99aa;
+}
+
+.social-icons{
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons div{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.social-icons div .fab{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+
+.social-icons div.facebook{
+  background: #5178d9;
+}
+
+.social-icons div.twitter{
+  background: #41caf6;
+}
+
+.social-icons div.google{
+  background: #fb4f4f;
+}
+.social-icons div.youtube{
+background:#bb0000;}
+</style>
+
+</head>
+<body>
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">AndhraPradesh, India</div>
+          <div class="text-two">Aditya Institution</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 9712 3456 80 </div>
+          <div class="text-two">+977 9821 4365 07</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">email@gmail.com</div>
+          <div class="text-two">info.email@gmail.com</div>
+        </div>
+      </div>
+
+<style>  
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .left-side{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  position: fixed;
+}
+/*this is for line design*/
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 3px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+</style>
+
+    <div class="contact-us">
+      <div class="title">
+        <h1>Contact us</h1>
+      </div>
+      <div class="form">
+        <div class="form-items">
+          <input type="text" class="input" placeholder="Username">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="form-items">
+          <input type="text" class="input" placeholder="Email">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="form-items">
+          <textarea class="input message" cols="30" rows="10" placeholder="Message....."></textarea>
+        </div>
+      </div>
+      
+      <div class="btn">
+        Submit
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      
+      
+      <div class="social-icons">
+        <div class="facebook">
+          <a target="_blank" href="https://www.facebook.com/">
+          <i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="twitter">
+          <a target="_blank" href="https://www.twitter.com/">
+          <i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="google">
+          <a target="_blank" href="https://www.google.com/">
+          <i class="fab fa-google-plus-g"></i></a>
+        </div>
+        <div class="youtube">
+          <a target="_blank" href="https://www.youtube.com/">
+          <i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
