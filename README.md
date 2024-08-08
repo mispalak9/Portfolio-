@@ -3,6 +3,7 @@
 This is a personal portfolio website that showcases my projects, skills, and experiences. The website is designed to provide an overview of my work and to serve as a platform for potential employers and collaborators to learn more about me.
 
 ![image alt](https://github.com/mispalak9/Portfolio-/blob/190ad35676de00698991330071f9abf71a65a2a3/2.jpg)
+![image alt](https://github.com/mispalak9/Portfolio-/blob/5540a2bd74e8e2993d0599898372771cb08274db/3.jpeg)
 
 ## Table of Contents
 - [Overview](#overview)
